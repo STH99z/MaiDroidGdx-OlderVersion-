@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="0.8"
+        android:key="disp_duration"
+        android:summary="@string/pref_descr_disp_duration"
+        android:title="@string/pref_title_disp_duration" />
+    <EditTextPreference
+        android:defaultValue="0.3"
+        android:key="scaling_duration"
+        android:summary="@string/pref_descr_scaling_duration"
+        android:title="@string/pref_title_scaling_duration" />
+    <EditTextPreference
+        android:defaultValue="0.25"
+        android:key="appear_position"
+        android:summary="@string/pref_descr_appear_position"
+        android:title="@string/pref_title_appear_position" />
+    <EditTextPreference
+        android:defaultValue="1.0"
+        android:key="viewport_scale"
+        android:summary="@string/pref_descr_viewport_scale"
+        android:title="@string/pref_title_viewport_scale" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="disp_frame_eff"
+        android:summary="@string/pref_descr_disp_frame_eff"
+        android:title="@string/pref_title_disp_frame_eff" />
+    <EditTextPreference
+        android:defaultValue="0.1"
+        android:key="eff_text_offset"
+        android:summary="@string/pref_descr_eff_text_offset"
+        android:title="@string/pref_title_eff_text_offset" />
+
+</PreferenceScreen>

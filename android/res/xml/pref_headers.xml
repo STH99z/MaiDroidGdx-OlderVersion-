@@ -1,0 +1,20 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.sth99.maidroidgdx.SettingsActivity$GameMechanismFragment"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/pref_header_gamemechanism" />
+
+    <header
+        android:fragment="com.sth99.maidroidgdx.SettingsActivity$VisualPreferenceFragment"
+        android:icon="@drawable/ic_visual_white_24dp"
+        android:title="@string/pref_header_visual" />
+
+    <header
+        android:fragment="com.sth99.maidroidgdx.SettingsActivity$SoundPreferenceFragment"
+        android:icon="@drawable/ic_sound_white_24dp"
+        android:title="@string/pref_header_sound" />
+
+</preference-headers>

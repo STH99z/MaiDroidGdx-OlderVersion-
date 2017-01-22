@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sth99.maidroidgdx"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <activity
+            android:name=".AndroidLauncher"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/GdxTheme" />
+        <!-- android:screenOrientation="landscape" -->
+        <activity
+            android:name=".PageMain"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_mainscreen_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/SettingsTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChooseMapActivity"
+            android:label="@string/title_activity_choose_map"
+            android:parentActivityName=".PageMain"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sth99.maidroidgdx.PageMain" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".PageMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sth99.maidroidgdx.PageMain" />
+        </activity>
+        <activity
+            android:name=".LinkActivity"
+            android:label="@string/title_activity_links"
+            android:parentActivityName=".PageMain"
+            >
+
+        </activity>
+    </application>
+
+</manifest>

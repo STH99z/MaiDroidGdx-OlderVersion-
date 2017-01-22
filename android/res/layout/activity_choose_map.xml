@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sth99.maidroidgdx.ChooseMapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maps in Assets" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="4"
+                android:rowCount="4">
+
+                <Button
+                    android:id="@+id/bMIAba"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songname_badapple"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content" />
+
+                <Button
+                    android:id="@+id/bMIAbbkk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songname_bbkk"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/bMIAcali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songanme_caliburne"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/bMIAcyc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songname_cycles"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/bMIAoboro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songname_oboro"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/bMIAconn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/songname_connect"
+                    android:textAllCaps="false" />
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maps in Storage (internal / external)" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
